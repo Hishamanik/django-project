@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'main.css' %}>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <a class="link" href="http://192.168.1.88:8000/">Please click this link to access the assignment hosted in local port for better experience</a>
+    <h2>URL for the link for copy/paste: http://192.168.1.88:8000/</h2>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="title">COMP 466 Assignment 3</div>
+            <div class="links">
+                <a class="link" href="part1">Part 1:Cookie Counter</a>
+                <a class="link" href="part2">Part 2: Slideshow</a>
+                <a class="link" href="part3">Part 3: Hisham's Computers</a>
+                <a class="link" href="part4">Part 4: Computer Store</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="documentation">
+                <div class="documentation-title">Student Name: Al Hisham Anik</div>
+                <div class="documentation-title">Student ID: 3587629</div>
+                <div class="documentation-title">Course: COMP 466 (Advanced Web Based technologies)</div>
+                <div class="documentation-title">Assignment 3</div>
+                <div class="documentation-title">Begin Date: 1st October 2022</div>
+                <div class="documentation-title">End Date: 6th October 2022</div>
+                <div class="documentation-title">Est Time: 80 hours</div>
+                <span class="documentation-divider"></span>
+                <br>
+                <div class="documentation-section">
+                    <center><h2><div class="documentation-subtitle">Introduction</div></h2></center>
+                    <img s
+                    <span class="documentation-subdivider"></span>
+                    <p>Note: It was mentioned in the course disccusion that I can use django to complete the assignment.
+                        Webservser: Tried hosting this django project in Heroku but failed so please run this web application locally.
+                    </p>
+                    <p>
+                        To initially set up the application, I used a Django project and configured it to contain four seperate applications,
+                        contained within the folders part1, part2, part3 and part4. In part1, a single Django view is used to serve index.html, which
+                        contains a basic html page with a top bar for navigation back home. This is setup in Django by defining a proper route. 
+                        Routing in Django is done via adding a pattern to urls.py, which the Django engine matches with the incoming request. In views.py, Django requests 
+                        are handled with a corresponding function. For part 1, this simply returned a HTML page when when /part1 is requested. Part 1 of the assignment is a cookie
+                        counter which counts the number of times a user visits a website and tracks the user IP address and location. The second web application 
+                        is similiar to assignment 1. This application would run a slideshow, using a list of pictures stored on the server. The third and fourth parts revolve 
+                        around building a computer store. This store contains a multitude of features. Users are able to browse existing models, look up specific parts 
+                        and then select and customize that computer and add to the cart and view a summary of what have been added to their cart and the total cost. 
+                    </p>
+                    <p>
+                        Did you install all modules to run the project? If you are running the web application locally please install all the modules listed
+                        in the requirements.txt file.
+                    </p>
+                    <p>
+                        Local running guidline: Please install pipenv to run django in a virtual environment. Install pipenv using the command line "pip3 install pipenv" then install django using "pipenv install django". 
+                        Now you are all set please get into the directory of manage.py using your command line terminal. Then type in "pipenv shell" to get your virtual environment set up. Then run the command 
+                        "python manage.py runserver 8000" to run the django app this will run this project locally in your localhost: http://127.0.0.1:8000/
+                        If you need more information/aid of running it locally please email me: aanik1@athabasca.edu
+                    </p>
+
+                    <p>
+                        <h3><div class="documentation-subtitle">How to Use & Misc</div></h3>
+                        <p>
+                            Use the top navigation bar to navigate between each of the assignments (parts 1-4). There are instructions on how to 
+                            use the computer store in parts 3 and 4. For a test user, you can use the following:
+                        </p>
+                        <p>
+                            Username: Testuser
+                        </p>
+                        <p>
+                            Password: pass
+                        </p>
+                    </p>
+                </div>
+                <div class="documentation-section">
+                    <center><h1><a href="part1">Part 1:Cookie Counter</a></div></h1> </center>
+                    <center><div class="documentation-subtitle">Documentation:</div></center> 
+                    <br>
+                    <p>Original Requirement from the assignment: "Create a web application that uses a persistent cookie to track how many times a client computer has visited the page. 
+                        In addition to the number of hits, the application also needs to display the IP address of the client computer and the time zone where the client computer is located."-Assignment 3 Description</p>
+                    <p>My Interpretation of the assignment project and requirements: So, I am suppose to create a web application to tracks user's IP address and display the number of times 
+                        the same user visits the webpage at one time and also make the location of the IP address of the user visible.
+                    </p>
+                    <p>Guide for users to set up, to run, and to use the web application: Setup the Djanago environment as directed in the introduction section if
+                        you are running the web application locally or simply navigate through the page buttons if viewing through the web server. 
+                    </p>
+                    <p>Analysis and design of the web application: I used JS script to make a external call to an open source which retrieves an user IP.
+                        Library is also built to track and extract the user's timezone. Finally, store a cookie containing a simple counter so every time a user revisits/refresh the page, cookie is checked then created 
+                        one if not present, and then incremented the counter which shows as the number of times visited by the user.  </p>
+                    <p>Comments: The first of the assignment is kind of related to Javascript and HTML which was introduced in the part part of the course. </p>
+
+                </div>
+                <div class="documentation-section">
+                    <center><h1><a class="link" href="part2">Part 2: Slideshow</a></h1></center>
+                    <center><div class="documentation-subtitle">Documentation:</div></center>
+                    <br>
+                    <p>Original Requirement from the assignment: "Develop a web application that runs a slideshow of a list of pictures. The requirements are as follows: Information about the pictures must be stored 
+                        on the server either in a database or in a text file. These details would include the name and location or URL of each picture and a description of the picture to be used as a caption, which 
+                        must be stored in a plain text file or a database. The caption should be shown under each picture in the show. There should be a button to start/stop the show. There should be a control to 
+                        toggle the show between random and sequential. There should be buttons to manually turn the show backward or forward, only if the show is in sequential mode. The show should have at least 20 
+                        nice pictures.."-Assignment 3 Description
+                    </p>
+
+                    <p>My Interpretation of the assignment project and requirements: The second web application is similiar to assignment 1. This application runs a slideshow, using a list of pictures stored on the server. 
+                        It includes buttons to start and stop the slideshow also the user can change the transition animation of slideslow. 
+                    </p>
+                    <p>Guide for users to set up, to run, and to use the web application: Setup the Djanago environment as directed in the introduction section if
+                        you are running the web application locally or simply navigate through the page buttons if viewing through the web server. 
+                    </p>
+                    <p>Analysis and design of the web application: I have defined a seperate REST api which handles interactions with images. This decouples the views from the actual fetching of data. Again, 
+                        a single Django view is defined which returns a basic HTML page. This page contains a couple buttons which are made
+                        functional by another additional JS script. The JS setInterval / clearIntervals function is used to control stopping and starting the slideshow. When a new image is selected, two
+                        get requests are sent to the backend, which fetches the image meta data and downloads the image itself.  </p>
+                    <p>Comments: This part of the assignment is similar to the part 3 of the Assignment 3 so the pictures are taken from there.   </p>
+
+                <div class="documentation-section">
+                    <center><h1><a class="link" href="part3">Part 3: Hisham's Store</a></h1></center>
+                    <center><div class="documentation-subtitle">Documentation:</div></center>
+                    <br>
+                    <p>Original Requirement from the assignment: "In this part, your focus should be on the web interface design and implementation of the online store. The requirements are as follows: 
+                        Visit some online stores, study their designs and functionalities, and write your findings in the assignment report. Based on your study above, analyze the requirements of the 
+                        web application you are to develop and then work out a design of the web application, including drawings of the interface, name and functions of each modules you will need, 
+                        and web pages/documents to be used. The application running in a web browser should be like a real online store, with a name and logo, menus and buttons for navigation, a 
+                        welcome page to greet customers, and other pages, such as contacts and a feedback form, and so on. There should be a list of computers, lists of different parts or components 
+                        (no less than five different components including at least RAM, hard drive, CPU, display, OS, and soundcard) of computers that can be reviewed by customers. At this stage, the 
+                        information about these products can be hard coded into the HTML or program files. A customer can select a computer with default/standard configuration and pricing, and then 
+                        customize it by changing its configuration, that is, by replacing one component with another from a list of compatible components. Whenever a change has been made by the customer, 
+                        the price total needs to be dynamically changed and displayed to the customer, in an area embedded in the online store, not in a pop-up window. After the customer has hit the Buy 
+                        or Add to Cart or something similar, a summary of selections, including all the details of the customized computer and its pricing, should be displayed in the browser window.
+                        At this stage, you dont need to save orders placed by customers in the database. You can use Cookies to store and track customer selections. All links, menus, and buttons within 
+                        the online store should be active."-Assignment 3 Part 3
+                    </p>
+
+                    <p>My Interpretation of the assignment project and requirements: The third and fourth parts revolve around building a computer store. This store contains a multitude of 
+                        features. Users are able to browse existing models, look up specific parts of a Computer and then select and customize that computer. The customization allows a user to change 
+                        any number of components to either more expensive or different ones. The price is then updated dynamically as a user modifies their system. 
+                    </p>
+                    <p>Guide for users to set up, to run, and to use the web application: Setup the Djanago environment as directed in the introduction section if
+                        you are running the web application locally or simply navigate through the page buttons if viewing through the web server. 
+                    </p>
+                    <p>Analysis and design of the web application: For part 3, I attempted to model the UX flow of Amazon. On Amazon, there exists a list of products that you can select for 
+                        more information. Once a user has selected a product, they can sometimes customize it (change color, size etc). Finally, users can add items
+                        to their cart, and then are able to view their cart. Items in their cart can be deleted, and the price updates dynamically.  
+                        Since part 3 required me to hardcode data rather than use a DB, I kept the data within a JSON file that I read via
+                        a set of functions in api/api.py. This was the only section of my codebase interacting with data, making the switch
+                        to a DB in part 4 much quicker and simplier.
+                    </p>
+                    <p>Research: </p>
+                        <p>
+                        I was instructed to look at some online stores and analyse the layout. I went to Amazon.ca and noticed that there is a search bar and filter type of 
+                        catagory menu with 10-15 different category options such as GiftIdeas, Best Sellers, Deals Store, Buy Again, ectra. On the left, there is a vertical menu containing 
+                        categories such as Shop By department, Digital Content and Devices, Trending. The front page contains categories and display items in those categories such as 
+                        Today's Best Deals, Staff Picks, Trending Now and a list of categories. When hovering over one of the left menu items, it then display subcategories of the 
+                        hovered category each with other subcategories. This design to me speaks that they want the user to be able to find their desired product with the least 
+                        clicks possible to remove confusion about where to find it and having to switch from page to page to find the desired products. When I ignore the subcategories
+                         and click the components category, it loads a new page but display all if the expandable submenu items and their categories from the previous page as a 
+                         vertical menu on the left side of the page. On the component page, the search bar and menu at the top of the page remain there like on the first page. 
+                         On the body of the page, the components and images of them are displayed along with the top two significant categories of it, such as for CPU's there is 
+                         Intel and AMD CPUs listed beside the image. The bar with the search and logo and sign in/registration and cart buttons is fixed to the top of the screen 
+                         for constant access. So to summerize, the layout of Amazon.ca is consistent accross each page. 
+                         </p>
+                         <p>
+                         Analising the functionality and technical aspects of Amazon.ca:  when I click on a item, there is a new window that appears with images of the product, 
+                         the name of the product, brief bullet points about significant specifications of the unit, the price, a complete list of specs, reviews and a button to 
+                         add it to your cart When I click add to cart, it seems like the item is added to a cart that is saved as a cookie because it does not require me to make 
+                         an account or log in and if I leave the site and come back, the cart is saved and won't be lost. The image shows up on the keft sude vertically and asks you 
+                         if you'd like to proceed to checkout. It is broken up into 3 steps, first, confirming your shipping address, displaying the one on record and a button to change it. 
+                         Second, is the payment method displaying the current information on record with a box to enter a gift card or promo code and an option to change the price, 
+                         prime delivery option, quantity and gift options. Below that is abutton to place my order and it's order total briefed on the right side which also has a button 
+                         to order, below that is the summary of the price of items, delivery charge, estimated taxes and the added total.    
+                        </p>
+
+
+                </div>
+                <div class="documentation-section">
+                    <center><h1><a class="link" href="part4">Part 4: Computer Store</a></h1></center>
+                    <center><div class="documentation-subtitle">Documentation:</div></center>
+                    <br>
+                    <p>Original Requirement from the assignment: "In part 4 of the assignment, you will continue your work completed in part 3, to develop a fully functioning online 
+                        computer store (without payment transaction, though). Your tasks for this part are: Add a customer management module to the online computer store, which should 
+                        include new customer registration, customer authentication, and password recovery. Add an order management module which will save orders for registered customers 
+                        and allow registered customers to manage their orders, including view the list and details of each item in the list and delete or make changes to a selected 
+                        order in the list. Design and implement a back-end database to support your online computer store that does the following.
+                        Store all the details of the computers and components and replace all the data hard coded into the program files with data from the database. Use the database 
+                        for all your customer management.Use the database for all your order management. When an order is submitted, the details of the order, including pricing, need 
+                        to be saved in the database, and then displayed in an appropriate format to the customer."-Assignment 3 Description
+                    </p>
+
+                    <p>My Interpretation of the assignment project and requirements:  Finally, a user can add a computer to a cart, which can also be removed.  
+                        In part 3 design I used rather hardcoded values as stated in the Assignment description but in Part 4 I had to extend this basic system by adding a database, 
+                        user authentication, and orders. 
+                    </p>
+                    <p>Guide for users to set up, to run, and to use the web application: Setup the Djanago environment as directed in the introduction section if
+                        you are running the web application locally or simply navigate through the page buttons if viewing through the web server. 
+                    </p>
+                    <p>Analysis and design of the web application: The first step in part 4 was designing a schema. Django provides models to interact with databases instead
+                        of directly working with them, but I have added a schema file called <i>schema.sql</i> which contains the raw sql statements.
+                        Below is an pseudo-ER diagram of the tables. Briefly, the User table is Django's built in user (used primarly for authentication).
+                        The store user contains a reference to the user, and the cart and order tables contain a total price and reference to the store user.
+                        Computers are broken down into two tables. The Computer table contains the name price, and wether it is a default computer or not.
+                        Default computes appear in the store (and non-default ones are assigned to users). Computers can be related to a users cart or order, and 
+                        also have a specification. 
+
+                        In this part, I first changed up api.py to use Django's QuerySet API to interact with the models. After replacing 
+                        the old code interacting with the JSON file, I added functionality for creating a computer which is assigned to a user. This would
+                        allow me to populate a user's cart and order. 
+
+                        For authentication, I used Django's build in system, which uses the User model. This required me to develop login/signup screens. 
+                        Once a user logs in, they can access all screens in part 4. If a user is not logged in, requests to any path other than /login
+                        or /create are redirected to the login page.
+                    </p>
+                    <p>Comments: This part of the assignment is an extension of Part 3 of this Assignment with focus in databases. </p>
+
+                    <center><h2> Thank You! The End.</h2></center>
+
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

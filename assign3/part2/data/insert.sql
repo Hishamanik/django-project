@@ -1,0 +1,11 @@
+INSERT INTO slideshow_image (title, location) VALUES ('Train Station', 'slideshow/data/1.jpesg'),
+('Train Station', 'slideshow/data/2.jpeg'),
+('Train Station', 'slideshow/data/3.jpeg'),
+('Train Station', 'slideshow/data/4.jpeg'),
+('Train Station', 'slideshow/data/5.jpeg'),
+('Train Station', 'slideshow/data/6.jpeg'),
+('Train Station', 'slideshow/data/7.jpeg'),
+('Train Station', 'slideshow/data/8.jpeg'),
+('Train Station', 'slideshow/data/9.jpeg'),
+('Train Station', 'slideshow/data/10.jpeg'),
+('Train Station', 'slideshow/data/1.jpeg')

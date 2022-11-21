@@ -1,0 +1,7 @@
+asgiref
+Django
+django-cors-headers
+djangorestframework
+pytz
+sqlparse
+pyngrok==5.1.0

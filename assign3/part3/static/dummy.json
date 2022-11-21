@@ -1,0 +1,248 @@
+{
+    "computers": [
+        {
+            "id": 1,
+            "name": "Xtreme300",
+            "price": 1500.00,
+            "components": {
+                "cpu": 2,
+                "graphics": 1,
+                "hardDrive": 2,
+                "ram": 2,
+                "os": 1,
+                "display": 1,
+                "soundCard": 1
+            }
+        },
+        {   
+            "id": 2,
+            "name": "Xtreme500",
+            "price": 1800.00,
+            "components": {
+                "cpu": 3,
+                "graphics": 4,
+                "hardDrive": 2,
+                "ram": 2,
+                "os": 1,
+                "display": 2,
+                "soundCard": 1
+            }
+        },
+        {
+            "id": 3,
+            "name": "XtremeGame Super",
+            "price": 2220.00,
+            "components": {
+                "cpu": 3,
+                "graphics": 5,
+                "hardDrive": 3,
+                "ram": 3,
+                "os": 1,
+                "display": 3,
+                "soundCard": 2
+            }
+        },
+        {   
+            "id": 4,
+            "name": "Xtreme1000",
+            "price": 1800.00,
+            "components": {
+                "cpu": 3,
+                "graphics": 4,
+                "hardDrive": 3,
+                "ram": 3,
+                "os": 1,
+                "display": 2,
+                "soundCard": 2
+            }
+        },
+        {
+            "id": 5,
+            "name": "XtremeGame Basic",
+            "price": 1000.00,
+            "components": {
+                "cpu": 1,
+                "graphics": 1,
+                "hardDrive": 1,
+                "ram": 1,
+                "os": 1,
+                "display": 1,
+                "soundCard": 1
+            }
+        },
+        {
+            "id": 6,
+            "name": "Prime",
+            "price": 3600.00,
+            "components": {
+                "cpu": 4,
+                "graphics": 6,
+                "hardDrive": 3,
+                "ram": 3,
+                "os": 1,
+                "display": 4,
+                "soundCard": 2
+            }
+        }
+    ],
+    "components": {
+        "cpu": [
+            {
+                "id": 1,
+                "name": "2 Core",
+                "price": 180.00,
+                "description": "A basic 2 core cpu."
+            },
+            {
+                "id": 2,
+                "name": "4 Core",
+                "price": 300.00,
+                "description": "A basic 4 core cpu."
+            },
+            {
+                "id": 3,
+                "name": "6 core cpu",
+                "price": 400.00,
+                "description": "A powerful 6 core cpu."
+            },
+            {
+                "id": 4,
+                "name": "8 Core cpu",
+                "price": 900.00,
+                "description": "A extremely powerful 12 core cpu."
+            }
+        ],
+        "graphics": [
+            {
+                "id": 1,
+                "name": "GTX 3030",
+                "price": 400.00,
+                "description": "Basic graphics card for light graphics and games."
+            },
+            {
+                "id": 2,
+                "name": "GTX 3040",
+                "price": 600.00,
+                "description": "Better than basic graphics card, can handle low graphics game."
+            },
+            {
+                "id": 3,
+                "name": "GTX 3050",
+                "price": 800.00,
+                "description": "New generation graphics card excellent for video and photo editing."
+            },
+            {
+                "id": 4,
+                "name": "GTX 3060",
+                "price": 1000.00,
+                "description": "Excellent mid-range graphics card can be used for playing moderate graphics game."
+            },
+            {
+                "id": 5,
+                "name": "GTX 3070",
+                "price": 1200.00,
+                "description": "Extremely competent graphics card for advanced gaming."
+            },
+            {
+                "id": 6,
+                "name": "GTX 3080",
+                "price": 1400.00,
+                "description": "Best graphics card to play highest level of graphics game."
+            }
+        ],
+        "hardDrive": [
+            {
+                "id": 1,
+                "name": "500GB",
+                "price": 100.00,
+                "description": "Moderate storage space  ."
+            },
+            {
+                "id": 2,
+                "name": "1TB",
+                "price": 150.00,
+                "description": "Larger disk drive enables lots of storage."
+            },
+            {
+                "id": 3,
+                "name": "1TD SSD",
+                "price": 350.00,
+                "description": "Extremely fast."
+            }
+        ],
+        "ram": [
+            {
+                "id": 1,
+                "name": "4GB",
+                "price": 80.00,
+                "description": "Good for regular normal computing needs."
+            },
+            {
+                "id": 2,
+                "name": "8GB",
+                "price": 99.00,
+                "description": "Good for gaming, lots of multi tasking and few google tabs opening."
+            },
+            {
+                "id": 3,
+                "name": "16GB",
+                "price": 150.00,
+                "description": "Great for heavy editing, gaming and software development and data analysis."
+            }
+        ],
+        "os": [
+            {
+                "id": 1,
+                "name": "Mac OS",
+                "price": 250.00,
+                "description": "Overpriced and filled with bloatware."
+            },
+            {
+                "id": 2,
+                "name": "Linux",
+                "price": 0,
+                "description": "The master operating systems."
+            }
+        ],
+        "display": [
+            {
+                "id": 1,
+                "name": "Sabre 24in 60hz",
+                "price": 199.99,
+                "description": "Basic regular sized monitor. Nothing special."
+            },
+            {
+                "id": 2,
+                "name": "BestVision 27in 60Hz",
+                "price": 299.99,
+                "description": "Larger monitor which improved color."
+            },
+            {
+                "id": 3,
+                "name": "BestVision 27in 60Hz 4K",
+                "price": 359.99,
+                "description": "Big monitor with great quality, resolution and picture."
+            },
+            {
+                "id": 4,
+                "name": "XGame Ultimate 30in 120Hz",
+                "price": 999.99,
+                "description": "Exceptional monitor. Large with high refresh rate. Great for gamers."
+            }
+        ],
+        "soundCard": [
+            {
+                "id": 1,
+                "name": "Basic",
+                "price": 99.99,
+                "description": "Good for regular usage"
+            },
+            {
+                "id": 2,
+                "name": "Advanced",
+                "price": 200.00,
+                "description": "Good for media editing."
+            }
+        ]
+    }
+}
